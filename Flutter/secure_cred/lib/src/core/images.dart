@@ -1,5 +1,5 @@
 class KImage {
-    static String image1 = ""
+    static String image1 = "";
 } 
 
 

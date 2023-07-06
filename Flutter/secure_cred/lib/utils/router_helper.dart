@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../src/securecred_app.dart';
+
 class Routes {
   Routes._();
 
@@ -7,19 +9,19 @@ class Routes {
   static const String login = '/login';
   static const String signup = '/signup';
   static const String profile = '/profile';
-  static const String forget_password = '/forget_password';
-  static const String reset_password = '/reset_password';
-  static const String change_password = '/change_password';
+  static const String forgetPassword = '/forget_password';
+  static const String resetPassword = '/reset_password';
+  static const String changePassword = '/change_password';
   static const String category = '/category';
 
-  static final routes = {
-    login: (_) => const ScreenLogin(),
-    signup: (_) => const ScreenSignup(),
-    profile: (_) => const ScreenProfile(),
-    forget_password: (_) => const ScreenForgetPassword(),
-    reset_password: (_) => const ScreenResetPassword(),
-    change_password: (_) => const ScreenChangePassword(),
-    category: (_) => const ScreenCategory(),
+  static Map<String,Widget Function(BuildContext)>routes = {
+    // login: (_) => const ScreenLogin(),
+    // signup: (_) => const ScreenSignup(),
+    // profile: (_) => const ScreenProfile(),
+    // forget_password: (_) => const ScreenForgetPassword(),
+    // reset_password: (_) => const ScreenResetPassword(),
+    // change_password: (_) => const ScreenChangePassword(),
+    // category: (_) => const ScreenCategory(),
   };
 
   static pushPage(Widget page) {
